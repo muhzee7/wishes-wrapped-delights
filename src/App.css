@@ -1,0 +1,63 @@
+
+body {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Add smooth scrolling to the document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom styling for links */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Logo hover effect */
+.logo-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Update festive red to match logo */
+.text-festive-red {
+  color: #e4252b;
+}
+
+.bg-festive-red {
+  background-color: #e4252b;
+}
+
+.hover\:bg-festive-red:hover {
+  background-color: #e4252b;
+}
+
+.hover\:text-festive-red:hover {
+  color: #e4252b;
+}
+
+/* Add mint colors to match logo */
+.bg-pastel-mint {
+  background-color: #8ecec0;
+}
+
+.text-pastel-mint {
+  color: #8ecec0;
+}
