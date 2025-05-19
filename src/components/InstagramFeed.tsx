@@ -39,28 +39,28 @@ const instagramPosts = [
 const InstagramFeed = () => {
   return (
     <section className="py-16 bg-kraft-light/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Follow Our Journey</h2>
           <a 
             href="https://www.instagram.com/box_of_wishes/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center text-gray-700 hover:text-festive-red transition-colors"
+            className="inline-flex items-center text-festive-red hover:text-festive-red/80 transition-colors"
           >
             <Instagram className="h-5 w-5 mr-2" />
             <span className="font-medium">@box_of_wishes</span>
           </a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
           {instagramPosts.map((post) => (
             <a
               key={post.id}
               href={post.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block group relative aspect-square overflow-hidden rounded-md"
+              className="block group relative aspect-square overflow-hidden rounded-lg shadow-md"
             >
               <img
                 src={post.imageUrl}
@@ -77,7 +77,7 @@ const InstagramFeed = () => {
         <div className="text-center mt-10">
           <Link 
             to="/gallery" 
-            className="inline-flex items-center text-gray-800 hover:text-festive-red font-medium"
+            className="inline-flex items-center text-festive-red hover:text-festive-red/80 font-medium transition-all hover:translate-x-1"
           >
             View Our Full Gallery
             <ArrowRight className="ml-2 h-5 w-5" />

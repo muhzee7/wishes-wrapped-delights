@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+body {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Add smooth scrolling to the document */
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes logo-spin {
+/* Custom styling for links */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Logo hover effect */
+.logo-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.card {
-  padding: 2em;
+/* Update festive red to match logo */
+.text-festive-red {
+  color: #e4252b;
 }
 
-.read-the-docs {
-  color: #888;
+.bg-festive-red {
+  background-color: #e4252b;
+}
+
+.hover\:bg-festive-red:hover {
+  background-color: #e4252b;
+}
+
+.hover\:text-festive-red:hover {
+  color: #e4252b;
+}
+
+/* Add mint colors to match logo */
+.bg-pastel-mint {
+  background-color: #8ecec0;
+}
+
+.text-pastel-mint {
+  color: #8ecec0;
 }
