@@ -1,5 +1,5 @@
 
-import { Instagram } from "lucide-react";
+import { Instagram, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // In a real implementation, you would fetch these from Instagram API
